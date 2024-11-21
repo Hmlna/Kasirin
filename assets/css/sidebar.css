@@ -1,0 +1,110 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    left: 15rem;
+    border-radius: 50%;
+  }
+  .sidenav .closebtn i {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/* Menu Inner Items */
+.menu-inner {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Reset padding */
+  margin: 0; /* Reset margin */
+}
+
+/* Menu Item */
+.menu-item {
+  margin-bottom: 10px; /* Space between items */
+}
+
+/* Menu Links */
+.menu-link {
+  padding: 10px 15px; /* Inner padding for clickable area */
+  text-decoration: none;
+  color: #818181; /* Default color */
+  display: flex; /* Align icon and text horizontally */
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-link:hover {
+  background-color: #333; /* Highlight on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Menu Icon */
+.menu-icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 20px; /* Icon size */
+}
+
+/* Submenu */
+.menu-sub {
+  list-style: none; /* Remove default list styling */
+  padding-left: 20px; /* Indent submenu items */
+  display: none; /* Initially hidden */
+}
+
+.menu-sub .menu-item {
+  margin-bottom: 5px; /* Space between submenu items */
+}
+
+.menu-item.open .menu-sub {
+  display: block; /* Show submenu when active */
+}
+
