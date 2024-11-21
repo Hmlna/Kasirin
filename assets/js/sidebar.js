@@ -17,3 +17,14 @@ document.querySelectorAll('.menu-item > .menu-link.menu-toggle').forEach(item =>
     });
   });
   
+  document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('mySidenav layout-menu'); // The sidebar element
+    const menuToggle = document.querySelector('.menu-toggle'); // The button used to open the sidebar
+    const isClickInside = sidebar.contains(event.target) || menuToggle.contains(event.target);
+  
+    if (!isClickInside) {
+      closeNav(); // Close the sidebar if the click is outside the sidebar or menu toggle
+    }
+  });
+
+  

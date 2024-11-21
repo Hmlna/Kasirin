@@ -14,7 +14,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Login</title>
+    <title>Register</title>
 
     <meta name="description" content="" />
 
@@ -69,11 +69,12 @@
                   <span class="app-brand-text demo text-body fw-bolder">KasirIn</span>
                 </a>
               </div>
-              <!-- /Logo -->
-              <h4 class="mb-2 text-body">Hello!</h4>
-              <p class="mb-4">Welcome Back</p>
 
-              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+
+              <form id="formRegister" class="mb-3" 
+              action="index.html" method="POST">
+                <h4 class="mb-2 text-body">Hello!</h4>
+                <p class="mb-4">Adventure Starts Here!</p>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
                   <input
@@ -98,27 +99,75 @@
                       placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
                       aria-describedby="password"
                       required
+                      minlength="8"
+                      pattern=".*[A-Z].*" 
+                      title="Password must be at least 8 characters and contain at least one uppercase letter."
                     />
                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                   </div>
                 </div>
+                <div class="mb-3 form-password-toggle">
+                    <div class="d-flex justify-content-between">
+                      <label class="form-label" for="confirmPassword">Confirm Password</label>
+                    </div>
+                    <div class="input-group input-group-merge">
+                      <input
+                        type="password"
+                        id="confirmPassword"
+                        class="form-control"
+                        name="confirm-password"
+                        placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                        aria-describedby="password"
+                        required
+                        minlength="8"
+                        pattern=".*[A-Z].*" 
+                        title="Password must be at least 8 characters and contain at least one uppercase letter."
+                      />
+                      <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                    </div>
+                  </div>
+                <!-- <div class="mb-3">
+                  <button class="btn btn-primary d-grid w-100" type="submit">Register</button>
+                </div> -->
+                <!-- Submit Button -->
                 <div class="mb-3">
-                  <button class="btn btn-primary d-grid w-100" type="submit">Login</button>
+                    <button class="btn btn-primary d-grid w-100" type="submit">Register</button>
                 </div>
-              </form>
+                </form>
+        
+                <!-- OTP Form (Initially Hidden) -->
+                <div id="otpForm" style="display: none;">
+                <h4 class="text-center">Enter OTP</h4>
+                <p class="text-center">Check your email for the OTP code.</p>
+        
+                <form id="formOTP">
+                    <div class="mb-3">
+                    <label for="otp" class="form-label">OTP</label>
+                    <input
+                        type="text"
+                        id="otp"
+                        name="otp"
+                        class="form-control"
+                        placeholder="Enter OTP"
+                        required
+                    />
+                    </div>
+  
+            <div class="mb-3">
+              <button class="btn btn-primary d-grid w-100" type="submit">Verify OTP</button>
+            </div>
+          </form>
 
-              <p class="text-center">
-                <a href="auth-forgot-password-basic.html">
-                  <small>Forgot Password?</small>
-                </a>
-              </p>
+
                 <p class="text-center">
-                  <small>New on our platform?</small>
-                  <a href="register.html">
-                    <small>Create an account</small>
+                  <small>Already have an account?</small>
+                  <a href="login.html">
+                    <small>Login here</small>
                   </a>
                 </p>
               </p>
+              
+              
             </div>
           </div>
           <!-- /Register -->
@@ -140,6 +189,7 @@
 
     <!-- Main JS -->
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/register.js"></script>
 
     <!-- Page JS -->
 
