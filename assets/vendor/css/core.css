@@ -3868,7 +3868,7 @@ textarea.form-control-lg {
 
 .card-body {
   flex: 1 1 auto;
-  padding: 1.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .card-title {
@@ -6209,6 +6209,15 @@ a.invert-bg-dark:hover, a.invert-bg-dark:focus {
 .table-dark th {
   border-bottom-color: #394859 !important;
 }
+
+.th-left{
+  border-top-left-radius: 8px;
+}
+.th-right{
+  border-top-right-radius: 8px;
+}
+
+
 .table-dark .btn-icon {
   color: #fff;
 }
