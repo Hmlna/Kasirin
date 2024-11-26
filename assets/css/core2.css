@@ -145,3 +145,14 @@
 .content-wrapper.order{
   margin-right: 300px;
 }
+
+.btn-secondary-not-btn {
+  text-align: center; /* Align text horizontally */
+  color: #fff; /* Text color */
+  background-color: #8592a3; /* Background color */
+  border: 1px solid #8592a3; /* Border with a specific width and color */
+  display: flex; /* Allows vertical centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+
+}

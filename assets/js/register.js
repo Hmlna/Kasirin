@@ -81,7 +81,7 @@ document.getElementById("formRegister").addEventListener("submit", function(even
         if (enteredOtp == generatedOtp) {
           alert("Account successfully activated!");
           // Redirect to login page or show login options
-          window.location.href = "sidebar.html"; // Redirect to login page upon successful OTP verification
+          window.location.href = "order.html"; // Redirect to login page upon successful OTP verification
         } else {
           alert("Invalid OTP. Please try again.");
         }

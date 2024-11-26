@@ -27,4 +27,29 @@ document.querySelectorAll('.menu-item > .menu-link.menu-toggle').forEach(item =>
     }
   });
 
-  
+  // Initialize the counter
+let counter = 1;
+
+// Select the elements
+const counterElement = document.getElementById("counter");
+const increaseBtn = document.getElementById("increase-btn");
+const decreaseBtn = document.getElementById("decrease-btn");
+
+// Event listeners for buttons
+increaseBtn.addEventListener("click", () => {
+  counter++;
+  updateCounter();
+});
+
+decreaseBtn.addEventListener("click", () => {
+  if (counter>=2){
+
+    counter--;
+    updateCounter();
+  }
+});
+
+// Update the counter display
+function updateCounter() {
+  counterElement.textContent = counter;
+}
