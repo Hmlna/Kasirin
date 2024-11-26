@@ -177,9 +177,9 @@
   font-size: 1.5rem;
 }
 
-#category-filter {
+.category-filter {
   border-radius: 5px;
-  width: 50%;
+  width: 55%;
   padding: 5px;
   
 }
@@ -193,18 +193,19 @@
 }
 
 .menu-items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two items per row */
+  gap: 15px; /* Space between items */
 }
 
-.menu-item {
+
+.menu-item-card{
   width: 120px;
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #fff;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -232,6 +233,11 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.add-btn {
+  margin-left: 60px;
+  margin-top: 15px;
 }
 
 .add-button:hover {
