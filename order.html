@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>sidebar</title>
+    <title>order</title>
 
     <meta name="description" content="" />
 
@@ -99,7 +99,7 @@
           </li>
           <li class="menu-item">
             <a href="order.html" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+              <i class="menu-icon tf-icons bx bx-receipt"></i>
               <span data-i18n="Analytics">Order</span>
             </a>
           </li>
@@ -118,7 +118,7 @@
                 </a>
               </li>
               <li class="menu-item">
-                <a href="pages-account-settings-account.html" class="menu-link">
+                <a href="product-menu.html" class="menu-link">
                   <div data-i18n="Account">Menu</div>
                 </a>
               </li>
@@ -137,14 +137,14 @@
 
           <li class="menu-item">
             <a href="index.html" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+              <i class="menu-icon tf-icons bx bx-category-alt"></i>
               <span data-i18n="Analytics">Categories</span>
             </a>
           </li>
 
           <li class="menu-item">
             <a href="index.html" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+              <i class="menu-icon tf-icons bx bx-square-rounded"></i>
               <span data-i18n="Analytics">Tables</span>
             </a>
           </li>
@@ -154,7 +154,7 @@
           <!-- Cards -->
           <li class="menu-item">
             <a href="customer.html" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-collection"></i>
+              <i class="menu-icon tf-icons bx bx-user"></i>
               <span data-i18n="Basic">Customer</span>
             </a>
           </li>
@@ -253,7 +253,7 @@
                 <div class="table-responsive text-nowrap">
                   <table class="table">
                     <thead class="table-dark">
-                      <tr>
+                      <tr class="text-center">
                         <th class="th-left">No</th>
                         <th>Menu Name</th>
                         <th>Quantity</th>
@@ -262,10 +262,15 @@
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>1</strong></td>
+                      <tr class="text-center">
+                        <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>1</strong></td>
                         <td>Nasi goreng</td>
-                        <td>1</td>
+                        <td><div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary" id="decrease-btn">-</button>
+                          
+                          <span class ="btn-secondary-not-btn" id = "counter">&nbsp; 1 &nbsp;</span>
+                          <button type="button" class="btn btn-secondary" id="increase-btn">+</button>
+                        </div></td>
                         <td>Rp 100.000</td>
                         <td>
                           <div class="dropdown">
@@ -283,10 +288,14 @@
                           </div>
                         </td>
                       </tr>
-                      <tr>
-                        <td><i class="fab fa-react fa-lg text-info me-3"></i> <strong>2</strong></td>
+                      <tr class="text-center">
+                        <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>2</strong></td>
                         <td>Mie Ayam</td>
-                        <td>1</td>
+                        <td><div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary" id="decrease-btn">-</button>
+                          <span class ="btn-secondary-not-btn" id = "counter">&nbsp; 1 &nbsp;</span>
+                          <button type="button" class="btn btn-secondary" id="increase-btn">+</button>
+                        </div></td>
                         <td>Rp 150.000</td>
                         <td>
                           <div class="dropdown">
@@ -304,8 +313,8 @@
                           </div>
                         </td>
                       </tr>
-                      <tr>
-                        <td><i class="fab fa-vuejs fa-lg text-success me-3"></i> <strong>3</strong></td>
+                      <tr class="text-center">
+                        <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>3</strong></td>
                         <td>Sate Ayam</td>
                         <td><div class="btn-group" role="group" aria-label="Basic example">
                           <button type="button" class="btn btn-secondary" id="decrease-btn">-</button>
@@ -330,12 +339,16 @@
                           </div>
                         </td>
                       </tr>
-                      <tr>
-                        <td>
-                          <i class="fab fa-bootstrap fa-lg text-primary me-3"></i> <strong>4</strong>
+                      <tr class="text-center">
+                        <td><i class="fab fa-angular fa-lg text-danger"></i> <strong>4</strong></td>
                         </td>
                         <td>Fish & Chips</td>
-                        <td>1</td>
+                        <td><div class="btn-group" role="group" aria-label="Basic example">
+                          <button type="button" class="btn btn-secondary" id="decrease-btn">-</button>
+                          
+                          <span class ="btn-secondary-not-btn" id = "counter">&nbsp; 1 &nbsp;</span>
+                          <button type="button" class="btn btn-secondary" id="increase-btn">+</button>
+                        </div></td>
                         <td>Rp 250.000</td>
                         <td>
                           <div class="dropdown">
