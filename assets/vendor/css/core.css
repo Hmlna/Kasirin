@@ -94,7 +94,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 1rem;
   font-weight: 500;
   line-height: 1.1;
-  color: #566a7f;
+  color: #000;
 }
 
 h1, .h1 {
@@ -6237,7 +6237,7 @@ a.invert-bg-dark:hover, a.invert-bg-dark:focus {
   letter-spacing: 1px;
 }
 .table:not(.table-dark) th {
-  color: #566a7f;
+  color: #fff;
 }
 
 .table-border-bottom-0 tr:last-child td,
@@ -15052,7 +15052,7 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
   display: block;
   width: 0.42em;
   height: 0.42em;
-  border: 1px solid;
+  /* border: 1px solid; */
   border-bottom: 0;
   border-left: 0;
   transform: translateY(-50%) rotate(45deg);

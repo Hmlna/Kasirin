@@ -113,7 +113,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the card */
   border-radius: 8px; /* Rounded corners */
   padding: 20px;
-  color: #333; /* Text color */
+  color: #000; /* Text color */
 }
 
 .card.table {
@@ -123,8 +123,8 @@
   padding-top: 0px;
   padding-right: 0px; 
   padding-left: 0px;
-  padding-bottom: 20px;
-  color: #333; /* Text color */
+  padding-bottom: 0px;
+  color: #000; /* Text color */
 }
 
 /* Right-Side Menu Card */
@@ -144,6 +144,10 @@
 
 .content-wrapper.order{
   margin-right: 300px;
+}
+
+.content-wrapper.tables{
+  margin-right: 0px;
 }
 
 .btn-secondary-not-btn {
@@ -222,7 +226,7 @@
 .menu-details p {
   margin: 5px 0;
   font-size: 14px;
-  color: #333;
+  color: #000;
 }
 
 .add-button {
@@ -242,4 +246,117 @@
 
 .add-button:hover {
   background-color: #0056b3;
+}
+
+
+.table-page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.table-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-page-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.table-page-legend {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  margin-right: 40px;
+  font-weight:bold;
+}
+
+.table-page-legend div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.green {
+  background-color: #44c767;
+}
+
+.dot.red {
+  background-color: #e74c3c;
+}
+
+.table-page-layout {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(5, 1fr); /* Create 5 equal columns */
+  gap: 20px; /* Space between tables */
+  /* padding: 20px; */
+  max-width: 100%; /* Ensure layout adapts to the container */
+}
+
+.table-page-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 35px;
+  align-items: center;
+}
+
+.table-page-table {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.table-page-table.large {
+  width: 150px;
+}
+
+.table-page-status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.table-page-status.green {
+  background-color: #44c767;
+}
+
+.table-page-status.red {
+  background-color: #e74c3c;
+}
+
+.card-table{
+  background-color: #fff; /* White background for the card */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Shadow for the card */
+  /* border-radius: 8px; Rounded corners */
+  padding: 20px;
+  color: #000; /* Text color */
+}
+
+.card-title.table-page{
+  margin-bottom: 0.875rem;
+}
+
+.hamburger {
+  margin-left: 10px;
+  margin-top: 30px;
+  cursor: pointer;
 }

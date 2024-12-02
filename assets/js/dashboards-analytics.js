@@ -620,7 +620,7 @@
                 return '$' + parseInt(val);
               },
               offsetY: 5,
-              color: '#697a8d',
+              color: '#000',
               fontSize: '13px',
               show: true
             }
